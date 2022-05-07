@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DjangoPlex</title>
-</head>
-<body>
-Hello World
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}DjangoPlex - Login{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row d-flex aligns-items-center justify-content-center" style="padding-top: 20%">
+            <div class="card" style="width: 28rem;">
+              <img src="https://e1.pngegg.com/pngimages/261/453/png-clipart-macos-app-icons-plex-media-server.png" class="card-img-top mx-auto pt-3" alt="..." style="width: 100px">
+              <div class="card-body">
+                <h5 class="card-title">DjangoPlex</h5>
+                <p class="card-text">Please login to continue.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Username</li>
+                <li class="list-group-item">Password</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Register</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
